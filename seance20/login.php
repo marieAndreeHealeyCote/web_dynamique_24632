@@ -1,7 +1,9 @@
 <?php
 $msg = null;
-if(isset($_GET['msg'])){
+if(isset($_GET['msg']) && $_GET['msg'] == 1){
     $msg = "Please check username";
+}elseif(isset($_GET['msg']) && $_GET['msg'] == 2){
+    $msg = "Please check password";
 }
 
 ?>
